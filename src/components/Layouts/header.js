@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import firebase from "gatsby-plugin-firebase"
+import firebase from "firebase"
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { AiOutlineLogout } from "react-icons/ai";
 
