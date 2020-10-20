@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import firebase from "gatsby-plugin-firebase"
 import SignUp from './SignUp';
 import Login from './Login';
+import { AiFillHome } from "react-icons/ai";
 
 export default function User() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -39,7 +40,7 @@ export default function User() {
               </React.Fragment>
             }
           </div>
-          {authActions && <button onClick={() => setAuthActions('')} className="button-back">Go home</button>}
+          {authActions && <button onClick={() => setAuthActions('')} className="button-back"><AiFillHome /> Go home</button>}
         </React.Fragment>
       }
     </div>

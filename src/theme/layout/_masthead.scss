@@ -11,6 +11,10 @@
   h1 {
     font-size: $global-spacing;
     color: $secondary-color;
+
+    svg {
+      margin-right: $medium-spacing;
+    }
   }
 }
 

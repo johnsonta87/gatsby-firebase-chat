@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import firebase from "gatsby-plugin-firebase"
+import { BsFillChatDotsFill } from "react-icons/bs";
+import { AiOutlineLogout } from "react-icons/ai";
 
 export default function Header({ siteTitle }) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -33,13 +35,14 @@ export default function Header({ siteTitle }) {
     <React.Fragment>
       <header className="masthead-container">
         <h1 style={{ margin: 0 }}>
+          <BsFillChatDotsFill />
           {siteTitle}
         </h1>
       </header>
 
       <div className="logout-block">
         {notification && <p className="notification-msg">{notification}</p>}
-        {loggedIn && <button onClick={handleLogout} className="button-logout">Logout</button>}
+        {loggedIn && <button onClick={handleLogout} className="button-logout">Logout <AiOutlineLogout /></button>}
       </div>
     </React.Fragment>
   )

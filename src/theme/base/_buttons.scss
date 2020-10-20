@@ -38,6 +38,10 @@ button {
   &:hover {
     color: $active-color;
   }
+
+  svg {
+    margin-left: 0.3rem;
+  }
 }
 
 .auth-btns {
@@ -62,5 +66,9 @@ button {
 
   &:hover {
     background: transparent;
+  }
+
+  svg {
+    margin-right: 0.3rem;
   }
 }
