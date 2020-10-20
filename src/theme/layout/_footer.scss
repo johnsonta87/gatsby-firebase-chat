@@ -1,0 +1,15 @@
+.footer-app {
+  background: $white-color;
+  padding: 0 1.25rem $global-spacing;
+
+  p {
+    font-size: $medium-spacing;
+    opacity: 0.6;
+    margin: 0;
+
+    a {
+      color: $active-color;
+      text-decoration: underline;
+    }
+  }
+}

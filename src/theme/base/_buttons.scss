@@ -1,0 +1,66 @@
+button {
+  font-weight: bold;
+  cursor: pointer;
+  background-color: $active-color;
+  color: $white-color;
+  border: 0;
+  padding: $medium-spacing 1.25rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $active-color;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.button-logout {
+  display: flex;
+  justify-content: flex-end;
+  background: transparent;
+  color: $active-color;
+  line-height: 1;
+  padding: 0.4rem;
+
+  &:hover {
+    color: $active-color;
+  }
+}
+
+.auth-btns {
+  button {
+    margin: 0 0.5rem;
+  }
+}
+
+.button-back {
+  margin-top: $global-spacing;
+  display: flex;
+  justify-content: center;
+  margin: $global-spacing auto;
+  background: transparent;
+  color: $active-color;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding: 0 0 0.3rem;
+
+  &:hover {
+    background: transparent;
+  }
+}

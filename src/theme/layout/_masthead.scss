@@ -1,0 +1,21 @@
+.masthead-container {
+  padding: $global-spacing;
+  text-align: center;
+  background: rgb(0, 0, 205);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 205, 1) 0%,
+    rgba(56, 56, 189, 1) 100%
+  );
+
+  h1 {
+    font-size: $global-spacing;
+    color: $secondary-color;
+  }
+}
+
+.logout-block {
+  display: flex;
+  background-color: $secondary-color;
+  justify-content: flex-end;
+}

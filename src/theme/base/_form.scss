@@ -1,0 +1,30 @@
+.fb-form {
+  width: 100%;
+
+  input,
+  textarea {
+    font-family: $font-stack;
+    display: flex;
+    flex: 100%;
+    padding: 0.3rem $medium-spacing;
+    width: 100%;
+    margin-top: 0.2rem;
+    margin-bottom: $medium-spacing;
+    border: 1px solid $light-color;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .form-submit-block {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
